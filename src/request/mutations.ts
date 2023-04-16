@@ -11,7 +11,7 @@ export const createEvent = async (data: any) => {
 
 export const editEvent = async (data: any) => {
     const response = await request({
-        url: '/events/'+ data?.id,
+        url: '/events/'+ data?.event_id,
         data: data,
         nethod: 'PUT',
     })
